@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <script>
+        function namein(n) {
+        ////ให้ตัวแปร div อ้างถึงแทกที่กำหนด id เป็น disp/////
+        div = document.getElementById('nn');
+        div.innerHTML = "";
+        div.innerHTML += "Hello " + n + " ";
+    }
+    </script>
+    <style type='text/css'>
+        body {cursor: url('http://fix.gs/pic/cursor/i/point60.cur'),auto;}
+        a {cursor: url('http://fix.gs/pic/cursor/i/point60.cur'),auto; }
+        html {
+       background: url(https://images.hdqwalls.com/download/8-bit-pixel-art-city-2o-1920x1080.jpg)
+       no-repeat center center fixed;
+               -webkit-background-size: cover;
+               -moz-background-size: cover;
+               -o-background-size: cover;
+               background-size: cover;
+               font-size: 25px;
+               font-family: 'Luckiest Guy', cursive;
+               color:#9b86ca
+        }
+    </style>
+</head>
+<body>
+    <b>1.แสดงผล Hello World</b></br></br>
+    <input type="text" onkeyup="namein(this.value);">
+    <div id="nn"></div>
+        
+        
+       
+</body>
+</html>
